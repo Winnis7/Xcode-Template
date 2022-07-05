@@ -18,6 +18,8 @@
 	<array>
 		<string>com.apple.platform.iphoneos</string>
 	</array>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___ViewController.swift</string>
 	<key>Options</key>
 	<array>
 		<dict>
@@ -47,6 +49,22 @@
 			<string>text</string>
 			<key>NotPersisted</key>
 			<true/>
+		</dict>
+		<dict>
+			<key>Identifier</key>
+			<string>Storyboard</string>
+			<key>Required</key>
+			<string>true</string>
+			<key>Name</key>
+			<string>Also create Storyboard file</string>
+			<key>Description</key>
+			<string>Whether to create a Storyboard file with the same name</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Default</key>
+			<string>true</string>
 		</dict>
 	</array>
 </dict>
