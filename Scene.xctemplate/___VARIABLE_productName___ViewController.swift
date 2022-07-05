@@ -9,7 +9,7 @@ import RxFlow
 // MARK: - ViewController
 class ___VARIABLE_productName___ViewController: BaseViewController, StoryboardView, Storyboardable {
   // MARK: Abstract
-  typealias Reactor = ___VARIABLE_productName___ViewReactor
+  typealias Reactor = ___VARIABLE_productName___Reactor
   
   // MARK: UI Component
   
@@ -17,7 +17,7 @@ class ___VARIABLE_productName___ViewController: BaseViewController, StoryboardVi
   
   // MARK: Initialization
   static var storyboard: UIStoryboard {
-    UIStoryboard(name: "___VARIABLE_storyboardName___", bundle: nil)
+    UIStoryboard(name: "___VARIABLE_productName___", bundle: nil)
   }
   
   // MARK: View Life Cycle
@@ -43,7 +43,7 @@ class ___VARIABLE_productName___ViewController: BaseViewController, StoryboardVi
 }
 
 // MARK: - Reactor
-class ___VARIABLE_productName___ViewReactor: Reactor, Stepper {
+class ___VARIABLE_productName___Reactor: Reactor, Stepper {
   // MARK: Abstract
   enum Action {
     

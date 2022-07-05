@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nEA-LV-Ppx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="VTW-8h-tuh">
             <objects>
-                <viewController id="nEA-LV-Ppx" sceneMemberID="viewController">
+                <viewController restorationIdentifier="___FILEBASENAME___ViewController" storyboardIdentifier="___FILEBASENAME___ViewController" id="nEA-LV-Ppx" customClass="___FILEBASENAMEASIDENTIFIER___ViewController" sceneMemberID="viewController" customModuleProvider="target">
                     <view key="view" contentMode="scaleToFill" id="eqC-OF-qz9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +47,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fD-RG-ag0">
                                                 <rect key="frame" x="24" y="16" width="366" height="48"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aq2-Kk-oyH" customClass="BaseButton" customModule="Switch" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aq2-Kk-oyH" customClass="BaseButton" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="366" height="48"/>
                                                         <color key="backgroundColor" name="color-gray-8"/>
                                                         <state key="normal" title="Button">
@@ -104,8 +104,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUJ-K5-3Lk">
                                         <rect key="frame" x="0.0" y="44" width="414" height="48"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEN-Q4-T8Z" customClass="BaseLabel" customModule="Switch" customModuleProvider="target">
-                                                <rect key="frame" x="187" y="11" width="40" height="26"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZEN-Q4-T8Z" customClass="BaseLabel" customModuleProvider="target">
+                                                <rect key="frame" x="186.5" y="14" width="41.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -174,14 +174,6 @@
             </objects>
         </scene>
     </scenes>
-    <designables>
-        <designable name="ZEN-Q4-T8Z">
-            <size key="intrinsicContentSize" width="40" height="26"/>
-        </designable>
-        <designable name="aq2-Kk-oyH">
-            <size key="intrinsicContentSize" width="43.5" height="24"/>
-        </designable>
-    </designables>
     <resources>
         <image name="icon-back" width="12" height="20"/>
         <namedColor name="color-gray-8">

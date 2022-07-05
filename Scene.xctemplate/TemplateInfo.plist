@@ -19,7 +19,7 @@
 		<string>com.apple.platform.iphoneos</string>
 	</array>
 	<key>MainTemplateFile</key>
-	<string>___FILEBASENAME___ViewController.swift</string>
+	<string>___FILEBASENAME___.swift</string>
 	<key>Options</key>
 	<array>
 		<dict>
@@ -28,43 +28,15 @@
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
-			<string>View:</string>
+			<string>Scene:</string>
 			<key>Description</key>
-			<string>The name of the view to create</string>
+			<string>The name of the Scene to create</string>
 			<key>Type</key>
 			<string>text</string>
-			<key>NotPersisted</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Identifier</key>
-			<string>storyboardName</string>
-			<key>Required</key>
-			<true/>
-			<key>Name</key>
-			<string>Storyboard:</string>
-			<key>Description</key>
-			<string>The name of the storyboard to create</string>
-			<key>Type</key>
-			<string>text</string>
-			<key>NotPersisted</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Identifier</key>
-			<string>Storyboard</string>
-			<key>Required</key>
-			<string>true</string>
-			<key>Name</key>
-			<string>Also create Storyboard file</string>
-			<key>Description</key>
-			<string>Whether to create a Storyboard file with the same name</string>
-			<key>Type</key>
-			<string>checkbox</string>
 			<key>NotPersisted</key>
 			<true/>
 			<key>Default</key>
-			<string>true</string>
+			<string>Splash</string>
 		</dict>
 	</array>
 </dict>

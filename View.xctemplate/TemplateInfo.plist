@@ -11,7 +11,7 @@
 	<key>Summary</key>
 	<string>A BaseViewController subclass.</string>
 	<key>SortOrder</key>
-	<string>2</string>
+	<string>1</string>
 	<key>DefaultCompletionName</key>
 	<string>View</string>
 	<key>Platforms</key>
@@ -62,9 +62,9 @@
 				<key>BaseView</key>
 				<string>View</string>
 				<key>BaseTableViewCell</key>
-				<string>TableViewCell</string>
+				<string>Cell</string>
 				<key>BaseCollectionViewCell</key>
-				<string>CollectionViewCell</string>
+				<string>Cell</string>
 			</dict>
 		</dict>
 		<dict>
