@@ -10,22 +10,30 @@ import Moya
 import RxMoya
 
 // MARK: - View
+
 class ___VARIABLE_productName___: BaseTableViewCell, StoryboardView {
+  
   // MARK: Abstract
+  
   typealias Reactor = ___VARIABLE_productName___Reactor
-
+  
   // MARK: UI Component
-
+  
   // MARK: Properties
-
+  
   // MARK: View Life Cycle
+  
   override func awakeFromNib() {
     super.awakeFromNib()
-
+    
   }
-
+  
   // MARK: Rx Binding
+  
   func bind(reactor: Reactor) {
+    
+    // MARK: Action
+    
     // MARK: State
     
     // MARK: View
@@ -34,20 +42,50 @@ class ___VARIABLE_productName___: BaseTableViewCell, StoryboardView {
 }
 
 // MARK: - Reactor
+
 class ___VARIABLE_productName___Reactor: Reactor {
+  
   // MARK: Abstract
-  typealias Action = NoAction
-
-  struct State {
-
+  
+  enum Action {
+    
   }
-
+  
+  enum Mutation {
+    
+  }
+  
+  struct State {
+    
+  }
+  
   // MARK: Properties
+  
   let scheduler: Scheduler = MainScheduler.instance
   let initialState: State
-
+  
   // MARK: Initialization
+  
   init() {
     initialState = State()
   }
+  
+  // MARK: Action -> Mutation
+  
+  func mutate(action: Action) -> Observable<Mutation> {
+    switch action {
+      
+    }
+  }
+  
+  // MARK: Mutation -> State
+  
+  func reduce(state: State, mutation: Mutation) -> State {
+    var newState = state
+    switch mutation {
+      
+    }
+    return newState
+  }
+  
 }

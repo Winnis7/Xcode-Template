@@ -42,6 +42,7 @@ class ___VARIABLE_productName___ViewController: BaseViewController, StoryboardVi
   // MARK: Rx Binding
   
   func bind(reactor: Reactor) {
+    
     // MARK: Action
     
     // MARK: State
