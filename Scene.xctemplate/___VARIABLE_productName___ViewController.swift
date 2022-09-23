@@ -85,20 +85,20 @@ class ___VARIABLE_productName___Reactor: Reactor, Stepper {
   
   // MARK: Action -> Mutation
   
-  func mutate(action: Action) -> Observable<Mutation> {
-    switch action {
-    
-    }
-  }
+//  func mutate(action: Action) -> Observable<Mutation> {
+//    switch action {
+//
+//    }
+//  }
   
   // MARK: Mutation -> State
   
-  func reduce(state: State, mutation: Mutation) -> State {
-    var newState = state
-    switch mutation {
-    
-    }
-    return newState
-  }
+//  func reduce(state: State, mutation: Mutation) -> State {
+//    var newState = state
+//    switch mutation {
+//
+//    }
+//    return newState
+//  }
   
 }
