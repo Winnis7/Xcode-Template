@@ -60,15 +60,15 @@ class ___VARIABLE_productName___Reactor: Reactor, Stepper {
   // MARK: Abstract
   
   enum Action {
-    
+    case refresh
   }
   
   enum Mutation {
-    
+    case setLoading(Bool)
   }
   
   struct State {
-    
+    @Pulse var loading: Bool = false
   }
   
   // MARK: Properties
@@ -85,20 +85,22 @@ class ___VARIABLE_productName___Reactor: Reactor, Stepper {
   
   // MARK: Action -> Mutation
   
-//  func mutate(action: Action) -> Observable<Mutation> {
-//    switch action {
-//
-//    }
-//  }
+  func mutate(action: Action) -> Observable<Mutation> {
+    switch action {
+    case .refresh:
+      return .empty()
+    }
+  }
   
   // MARK: Mutation -> State
   
-//  func reduce(state: State, mutation: Mutation) -> State {
-//    var newState = state
-//    switch mutation {
-//
-//    }
-//    return newState
-//  }
+  func reduce(state: State, mutation: Mutation) -> State {
+    var newState = state
+    switch mutation {
+    case .setLoading(let isLoading):
+      newState.loading = isLoading
+    }
+    return newState
+  }
   
 }
