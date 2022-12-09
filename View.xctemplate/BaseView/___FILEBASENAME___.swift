@@ -1,17 +1,18 @@
 //___FILEHEADER___
 
 import UIKit
-import SnapKit
 import ReactorKit
+import SnapKit
+import Reusable
+import Moya
 import RxSwift
 import RxCocoa
 import RxFlow
-import Moya
 import RxMoya
 
 // MARK: - View
 
-class ___VARIABLE_productName___: BaseXibView, StoryboardView {
+class ___VARIABLE_productName___: BaseXibView, StoryboardView, NibOwnerLoadable {
   
   // MARK: Abstract
   
@@ -23,11 +24,14 @@ class ___VARIABLE_productName___: BaseXibView, StoryboardView {
   
   // MARK: Initialization
   
-  override func commonInit() {
-    super.commonInit()
-    
-    // ContentView injection required at this point.
-    self.contentView = ___VARIABLE_productName___.loadFromNib(withOwner: self)
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    loadNibContent()
+  }
+  
+  required init?(coder: NSCoder) {
+    super.init(coder: coder)
+    loadNibContent()
   }
   
   // MARK: View Life Cycle
@@ -44,8 +48,6 @@ class ___VARIABLE_productName___: BaseXibView, StoryboardView {
     // MARK: Action
     
     // MARK: State
-    
-    // MARK: View
     
   }
   
@@ -71,7 +73,6 @@ class ___VARIABLE_productName___Reactor: Reactor {
   
   // MARK: Properties
   
-  let scheduler: Scheduler = MainScheduler.instance
   let initialState: State
   
   // MARK: Initialization
@@ -83,19 +84,15 @@ class ___VARIABLE_productName___Reactor: Reactor {
   // MARK: Action -> Mutation
   
   func mutate(action: Action) -> Observable<Mutation> {
-    switch action {
-      
-    }
+    
   }
   
   // MARK: Mutation -> State
   
   func reduce(state: State, mutation: Mutation) -> State {
-    var newState = state
-    switch mutation {
-      
-    }
-    return newState
+    
   }
+  
+  // MARK: Task
   
 }

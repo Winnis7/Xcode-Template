@@ -1,31 +1,26 @@
 //___FILEHEADER___
 
 import UIKit
-import SnapKit
 import ReactorKit
+import SnapKit
+import Reusable
+import Moya
 import RxSwift
 import RxCocoa
 import RxFlow
-import Moya
 import RxMoya
 
 // MARK: - ViewController
 
-class ___VARIABLE_productName___ViewController: BaseViewController, StoryboardView, Storyboardable {
+class ___FILEBASENAME___: BaseViewController, StoryboardView, StoryboardBased {
   
-  // MARK: Abstract
+  // MARK: Type
   
-  typealias Reactor = ___VARIABLE_productName___Reactor
+  typealias Reactor = ___FILEBASENAME___Reactor
   
   // MARK: UI Component
   
   // MARK: Properties
-  
-  // MARK: Initialization
-  
-  static var storyboard: UIStoryboard {
-    UIStoryboard(name: "___VARIABLE_productName___", bundle: nil)
-  }
   
   // MARK: View Life Cycle
   
@@ -47,33 +42,30 @@ class ___VARIABLE_productName___ViewController: BaseViewController, StoryboardVi
     
     // MARK: State
     
-    // MARK: View
-    
   }
   
 }
 
 // MARK: - Reactor
 
-class ___VARIABLE_productName___Reactor: Reactor, Stepper {
+class ___FILEBASENAME___Reactor: Reactor, Stepper {
   
-  // MARK: Abstract
+  // MARK: Type
   
   enum Action {
-    case refresh
+    
   }
   
   enum Mutation {
-    case setLoading(Bool)
+    
   }
   
   struct State {
-    @Pulse var loading: Bool = false
+    
   }
   
   // MARK: Properties
   
-  let scheduler: Scheduler = MainScheduler.instance
   let initialState: State
   let steps = PublishRelay<Step>()
   
@@ -86,21 +78,15 @@ class ___VARIABLE_productName___Reactor: Reactor, Stepper {
   // MARK: Action -> Mutation
   
   func mutate(action: Action) -> Observable<Mutation> {
-    switch action {
-    case .refresh:
-      return .empty()
-    }
+    
   }
   
   // MARK: Mutation -> State
   
   func reduce(state: State, mutation: Mutation) -> State {
-    var newState = state
-    switch mutation {
-    case .setLoading(let isLoading):
-      newState.loading = isLoading
-    }
-    return newState
+    
   }
+  
+  // MARK: Task
   
 }

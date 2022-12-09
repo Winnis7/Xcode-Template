@@ -36,7 +36,7 @@
 			<key>NotPersisted</key>
 			<true/>
 			<key>Default</key>
-			<string>Splash</string>
+			<string>SplashViewController</string>
 		</dict>
 	</array>
 </dict>

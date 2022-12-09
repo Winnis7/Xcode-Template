@@ -1,19 +1,20 @@
 //___FILEHEADER___
 
 import UIKit
-import SnapKit
 import ReactorKit
+import SnapKit
+import Reusable
+import Moya
 import RxSwift
 import RxCocoa
 import RxFlow
-import Moya
 import RxMoya
 
 // MARK: - View
 
-class ___VARIABLE_productName___: BaseTableViewCell, StoryboardView {
+class ___VARIABLE_productName___: BaseTableViewCell, StoryboardView, Reusable {
   
-  // MARK: Abstract
+  // MARK: Type
   
   typealias Reactor = ___VARIABLE_productName___Reactor
   
@@ -36,8 +37,6 @@ class ___VARIABLE_productName___: BaseTableViewCell, StoryboardView {
     
     // MARK: State
     
-    // MARK: View
-    
   }
 }
 
@@ -45,7 +44,7 @@ class ___VARIABLE_productName___: BaseTableViewCell, StoryboardView {
 
 class ___VARIABLE_productName___Reactor: Reactor {
   
-  // MARK: Abstract
+  // MARK: Type
   
   enum Action {
     
@@ -73,19 +72,15 @@ class ___VARIABLE_productName___Reactor: Reactor {
   // MARK: Action -> Mutation
   
   func mutate(action: Action) -> Observable<Mutation> {
-    switch action {
-      
-    }
+    
   }
   
   // MARK: Mutation -> State
   
   func reduce(state: State, mutation: Mutation) -> State {
-    var newState = state
-    switch mutation {
-      
-    }
-    return newState
+    
   }
+  
+  // MARK: Task
   
 }
